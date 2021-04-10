@@ -1,0 +1,39 @@
+<html lang="en"></html>
+<%- include("./partials/head") %>
+  <body>
+
+
+    <%- include("./partials/nav") %>
+      <h1 align="center" >All posts<hr></h1>
+      <% if(posts.length>0){%>
+        <% posts.forEach(posts=>{ %>
+            <h3 class="title" align="center" style="color: rgba(68, 46, 179, 0.986);"><%= posts.title %></h3>
+            <p class="email" align="center" style="background-color: rgba(255, 0, 106, 0.39);"><%= posts.body %><hr></p>
+        <% }) %>
+        <% } else{ %>
+          <p align="center">No post to display...</p>
+          <% } %>
+
+      <div class="dark1" >
+        <h3>Create post</h3>
+          <form class="quote" method="POST" action="/community">
+                            <div>
+                                <label>Name</label><br>
+                                <input type="text" placeholder="Name" name='title'>
+                            </div>
+                            <div>
+                                <label>Email</label><br>
+                                <input type="email" placeholder="Email Address" name="email">
+                            </div>
+                            <div>
+                                <label>Message</label><br>
+                                <textarea placeholder="Message" name="body"></textarea>
+                            </div>
+                            <button class="button_1" type="submit">Send</button>
+                      </form>
+            </div>
+        <footer>
+            <p>Brisker's Spot, Copyright &copy; 2021</p>
+          </footer>
+    </body>
+</html>

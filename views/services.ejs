@@ -1,0 +1,66 @@
+<html lang="en"></html>
+<%- include("./partials/head") %>
+  <body background="#ffffff">
+    <%- include("./partials/nav") %>
+   
+  
+      
+      <section id="main">
+        <div class="container">
+          <article id="main-col">
+            <h1 class="page-title">Services</h1>
+            <ul id="services">
+              <li>
+                <div class="demo2">
+                <h3>Recent News</h3>
+                <p > Grab the latest news from various different sources.</p>
+                <div class="demo">
+                    <a href="https://www.timesnownews.com/"><img src="https://i.imgur.com/E4wQprz.png" width="100px" height="100px"></a>
+                    <a href="https://www.hindustantimes.com/"><img src="https://i.imgur.com/8QOn9tA.png" width="150px" height="100px"></a>
+                    <a href="https://www.aajtak.in/"><img src="https://i.imgur.com/F1EShcG.jpg" width="150px" height="100px"></a>
+                  </div></div>
+              </li>
+              <li>
+                <h3>Sports</h3>
+                <p>Checkout the live score, be it cricket or football</p>
+                <div class="demo">
+                   <iframe src="https://www.cricket.com.au/"></iframe>
+                   <a href="https://www.hotstar.com/in/sports/cricket"><img src="https://i.imgur.com/gKJ8anM.jpg" width="175px" height="150px"></a>
+                   <a href="https://www.skysports.com/"><img src="https://i.imgur.com/2zFsyq9.png" width="175px" height="150px"></a>
+              </li>
+              <li>
+                <h3>Music and Entertainment</h3>
+                <p>Listen our daily songs. Sit back and relax. Enjoy you day. We hope you will like it.</p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/RgKAFK5djSk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </li>
+            </ul>
+          </article>
+  
+          <aside id="sidebar">
+            <div class="dark">
+              <h3>Get Daily News Updates</h3>
+              <form class="quote" method="GET" action="/services-api/">
+                            <div>
+                                <label>Name</label><br>
+                                <input type="text" placeholder="Name" name='name'>
+                            </div>
+                            <div>
+                                <label>Email</label><br>
+                                <input type="email" placeholder="Email Address" name="email">
+                            </div>
+                            <div>
+                                <label>Message</label><br>
+                                <textarea placeholder="Message"></textarea>
+                            </div>
+                            <button class="button_1" type="submit">Send</button>
+                      </form>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <footer>
+        <p>Brisker's Spot, Copyright &copy; 2021</p>
+      </footer>
+    </body>
+</html>
